@@ -120,7 +120,14 @@ open class ImagePickerSheetController: UIViewController {
     open fileprivate(set) var enlargedPreviews = false
     
     fileprivate let minimumPreviewHeight: CGFloat = 129
-    fileprivate var maximumPreviewHeight: CGFloat = 129
+    fileprivate var maximumPreviewHeight: CGFloat {
+        set {
+            
+        }
+        get {
+            return 129
+        }
+    }
     
     fileprivate var previewCheckmarkInset: CGFloat {
         return 12.5
